@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Java interview preparation — Core Java, OOP, Collections, Java 8+, Spring Boot, SQL and interview practice." />
+  <title>Java Interview Preparation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">☕</span><span>Java Interview Prep</span></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#topics">Topics</a><a href="#roadmap">Roadmap</a><a href="#practice">Practice</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INTERVIEW PREPARATION</p>
+        <h1>Build Java confidence,<br><span>one concept at a time.</span></h1>
+        <p class="hero-text">A focused workspace for mastering Java fundamentals, solving interview questions, and tracking what to learn next.</p>
+        <div class="hero-actions"><a class="btn primary" href="#topics">Start learning →</a><a class="btn secondary" href="#roadmap">View roadmap</a></div>
+      </div>
+      <div class="code-card" aria-label="Java example">
+        <div class="window-dots"><i></i><i></i><i></i><span>Example.java</span></div>
+        <pre><code><b>public class</b> InterviewReady {
+
+  <b>public static void</b> main(String[] args) {
+    System.out.println(<em>"Keep learning."</em>);
+  }
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>7</strong><span>Core tracks</span></div><div><strong>50+</strong><span>Practice slots</span></div><div><strong>1</strong><span>Clear roadmap</span></div><div><strong>∞</strong><span>Revision loops</span></div>
+    </section>
+
+    <section id="topics" class="section">
+      <div class="section-heading"><div><p class="eyebrow">LEARNING PATH</p><h2>Choose a topic</h2></div><p>Start with fundamentals, then move toward the stack used in real interviews.</p></div>
+      <div class="topic-grid" id="topicGrid"></div>
+    </section>
+
+    <section id="roadmap" class="section roadmap-section">
+      <div class="section-heading"><div><p class="eyebrow">ROADMAP</p><h2>Your interview path</h2></div></div>
+      <div class="roadmap"><div class="road-step active"><span>01</span><div><h3>Java Fundamentals</h3><p>Syntax, memory, JVM, JDK/JRE, data types and control flow.</p></div></div><div class="road-step"><span>02</span><div><h3>OOP & Core Java</h3><p>Classes, inheritance, polymorphism, abstraction, interfaces and exceptions.</p></div></div><div class="road-step"><span>03</span><div><h3>Collections & Java 8+</h3><p>Collections, generics, streams, lambdas, Optional and functional interfaces.</p></div></div><div class="road-step"><span>04</span><div><h3>Spring Boot & SQL</h3><p>REST APIs, dependency injection, JPA basics, queries and database concepts.</p></div></div></div>
+    </section>
+
+    <section id="practice" class="section practice-section">
+      <div class="practice-card"><div><p class="eyebrow">QUICK PRACTICE</p><h2>Test yourself</h2><p id="question">What is the difference between <code>==</code> and <code>equals()</code> in Java?</p></div><button class="btn primary" id="answerBtn">Show answer</button><p class="answer" id="answer">For objects, <code>==</code> compares references, while <code>equals()</code> is intended to compare logical equality when the class overrides it.</p></div>
+    </section>
+  </main>
+
+  <footer><span>Java Interview Preparation</span><span>Learn • Practice • Revise</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
